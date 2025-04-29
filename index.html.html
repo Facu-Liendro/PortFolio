@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Facundo Liendro</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles_boots.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Facundo Liendro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#education">Educación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sobre mí -->
+<section id="about" class="container py-5">
+  <h2 class="section-title">Sobre mí</h2>
+  <p>
+    Estudiante de la Licenciatura en Análisis de Sistemas, con interés en backend y lógica de aplicaciones. Apasionado por la resolución de problemas y la optimización de sistemas, con experiencia en programación, bases de datos y administración de entornos virtualizados. Dispuesto a aprender y adaptarse a nuevas tecnologías que aporten valor en el desarrollo de software y la infraestructura tecnológica. 
+  </p>
+</section>
+
+<!-- Proyectos -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title">Proyectos</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Compilador</h5>
+        <p class="card-text">Creación de un lenguaje interpretado específico para el manejo de listas y conjuntos, utilizando herramientas de análisis léxico y sintáctico, Flex y Bison.</p>
+
+        <div class="contenedor d-flex justify-content-center">
+        <div>C</div>
+        <div>Flex</div>
+        <div>Bison</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Corrector ortográfico</h5>
+        <p class="card-text">Desarrollo de programa de escritorio con Java. Solución a la corrección de textos en base a un diccionario.</p>
+
+        <div class="contenedor d-flex justify-content-center">
+          <div>Java</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Plan de Contingencia en Base de Datos</h5>
+        <p class="card-text">Implementación de Point In Time Recovery (PITR), sobre base de datos en el motor de base de datos postgresql. </p>
+
+        <div class="contenedor d-flex justify-content-center">
+          <div>PostgreSQL</div>
+          <div>Docker</div>
+        </div>
+
+      </div>   
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Técnica de Replicación en Base de Datos</h5>
+        <p class="card-text">Implementación de Streaming Replication sobre base de datos postgresql en el motor de base de datos postgresql. </p>
+
+        <div class="contenedor d-flex justify-content-center">
+          <div>PostgreSQL</div>
+          <div>Docker</div>
+        </div>
+
+      </div>   
+    </div>
+
+  </div>
+</section>
+
+<!-- Educacion-->
+<section id="education" class="container py-5">
+  <h2 class="section-title">Educación</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Escuela de Educación Técnica N° 3138 “Albert Einstein” – EX ENET 2 </h5>
+        <p class="card-text">Orientación en Electrónica. (Formación hasta quinto año - Tercero del ciclo Superior). </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Instituto Dr. Facundo de Zuviria N° 8037 - Secundario</h5>
+        <p class="card-text">Título Secundario con Bachiller con Orientación en Informática. </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-custom p-3">
+        <h5 class="card-title">Universidad Nacional de Salta</h5>
+        <p class="card-text">Carrera Licenciatura en Análisis de Sistemas (Cursando cuarto año actualmente).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contacto -->
+<section id="contact" class="container py-5">
+  <h2 class="section-title">Contacto</h2>
+  <form action="https://formspree.io/f/tuformulario" method="POST" class="row g-3">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Tu correo" required>
+    </div>
+    <div class="col-12">
+      <textarea name="message" rows="5" class="form-control" placeholder="Tu mensaje" required></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-accent">Enviar mensaje</button>
+    </div>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center text-muted py-4">
+  © 2025 Facundo Liendro
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
